@@ -9,6 +9,7 @@ public class AppUser {
     private Long user_id;
     private String name;
     private String username;
+    @Column(name="email_adress", unique = true)
     private String email;
     private String password;
     @Enumerated(EnumType.STRING)
