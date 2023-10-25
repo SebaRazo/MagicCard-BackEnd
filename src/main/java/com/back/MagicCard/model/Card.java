@@ -13,6 +13,8 @@ public class Card {
     @Temporal(TemporalType.DATE)
     private Date yearCard;
     private Long prize;
+    @Lob
+    private byte[] imagen;
 
     public Long getId() {
         return id;
@@ -44,6 +46,14 @@ public class Card {
 
     public void setPrize(Long prize) {
         this.prize = prize;
+    }
+
+    public byte[] getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(byte[] imagen) {
+        this.imagen = imagen;
     }
 
     public Admin getAdmin() {
